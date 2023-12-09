@@ -1,0 +1,74 @@
+.rmdb-heroimage {
+  background-size: 100%, cover !important;
+  background-position: center, center !important;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  animation: animateHeroimage 1s;
+}
+
+@keyframes animateHeroimage {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.rmdb-heroimage-content {
+  max-width: 1280px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.rmdb-heroimage-text {
+  z-index: 100;
+  /* max-width: 65%; */
+  position: absolute;
+  bottom: 40%;
+  height: 5rem;
+  background: rgba(0, 0, 0, 0.0);
+  color: #fff;
+}
+
+.rmdb-heroimage-text h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.rmdb-heroimage-text p {
+  font-family: 'Abel', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #fff;
+  max-width: 65%;
+}
+
+@media screen and (max-width: 640px) {
+  .rmdb-heroimage-text {
+    max-width: 100%;
+    bottom: 70%
+
+  }
+
+  .rmdb-heroimage-text h1 {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .rmdb-heroimage-text p {
+    line-height: 1.5rem;
+    color: #fff;
+    max-width: 100%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .rmdb-heroimage-text {
+    max-width: 100%;
+    bottom: 60%
+  }
+}
