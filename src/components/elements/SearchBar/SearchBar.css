@@ -24,7 +24,7 @@
 
 .rmdb-searchbar-input {
   font-family: 'Abel', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
   background: transparent;
   color: #fff;
@@ -36,11 +36,3 @@
   outline: none;
 }
 
-@media screen and (max-width: 720px) {
-  
-  .rmdb-searchbar-input {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-  }
-}
