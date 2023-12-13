@@ -10,7 +10,7 @@ const SearchBar = ({ callback }) => {
     }, 500);
 
     return () => clearTimeout(timeout); // Cleanup the timeout on component unmount or value change
-  }, [value]);
+  }, [value, callback]);
 
   const handleInputChange = (event) => {
     setValue(event.target.value);

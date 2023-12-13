@@ -129,7 +129,7 @@ meter::-webkit-meter-even-less-good-value {
   .rmdb-movieinfo-content {
     width: 100%;
     height: auto;
-    /* top: -1rem; */
+    top: -1rem;
   }
   .rmdb-movieinfo-text p {
     font-size: 0.5rem;

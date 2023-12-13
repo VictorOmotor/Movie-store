@@ -22,7 +22,7 @@ const MovieInfo = ({movie, directors}) => {
         </div>
         {directors.length > 1 ? <h3>DIRECTORS</h3> : <h3>DIRECTOR</h3>}
         {directors.map((element, i) => (
-            <p key={i}>{element.name}</p>
+            <p className='rmdb-director' key={i}>{element.name}</p>
         ))}
         </div>
         <FontAwesome className='fa-film' name='film' size='5x' />

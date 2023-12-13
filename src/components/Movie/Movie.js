@@ -9,14 +9,14 @@ import { useLocation } from 'react-router-dom';
 import FourColGrid from '../elements/FourColGrid/FourColGrid';
 import Actor from '../elements/Actor/Actor';
 
-export default function Movie(props) {
+const Movie = () => {
   const [movie, setMovie] = useState(null);
   const [actors, setActors] = useState(null);
   const [directors, setDirectors] = useState([]);
   const [loading, setLoading] = useState(false);
 
   const location = useLocation();
-  const { movieName } = location.state;
+  const { movieName } = location?.state;
   
   useEffect(() => {
     const movieId = location.pathname.replace('/', '');
@@ -72,3 +72,5 @@ export default function Movie(props) {
     </div>
   );
 }
+
+  export default Movie;
